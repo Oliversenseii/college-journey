@@ -1,0 +1,227 @@
+.content {
+    scroll-margin-top: 200rem;
+}
+
+.newspaper-header {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 1.5rem;
+  background: #fff;
+  box-shadow: 0 0 12px rgba(0,0,0,.1);
+  border-bottom: 4px double #2d6a4f;
+  text-align: center;
+}
+.newspaper-header h1 {
+  font-size: 2.8rem;
+  color: #2d6a4f;
+  margin-bottom: .3rem;
+}
+.newspaper-header p {
+  font-size: 1.1rem;
+  color: #6b7280;
+}
+
+.grades-container {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 1.5rem;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 2rem;
+  background: #fff;
+  box-shadow: 0 0 12px rgba(0,0,0,.1);
+  border-radius: 12px;
+}
+
+.mobile-menu-toggle {
+  display: none;
+  grid-column: 1 / -1;
+  background: #f1f8f5;
+  color: #2d6a4f;
+  border: none;
+  padding: 1rem;
+  font-size: 1.1rem;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  justify-self: start;
+  align-items: center;
+  gap: 0.5rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+.mobile-menu-toggle span {
+  flex: 1;
+  text-align: left;
+}
+
+.tabs {
+  position: sticky;
+  top: 2rem;
+  align-self: start;
+  background: #fff;
+  padding: 1.5rem 1.2rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,.08);
+  max-height: calc(100vh - 4rem);
+  overflow-y: auto;
+  transition: all 0.3s ease;
+}
+.tabs h2 {
+  font-size: 1.6rem;
+  color: #2d6a4f;
+  margin: 0 0 1rem;
+}
+.tab-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.tab-item {
+  margin-bottom: 0.5rem;
+}
+.tab-link {
+  display: block;
+  padding: 0.9rem 1.2rem;
+  background: #f1f5f9;
+  color: #475569;
+  font-weight: bold;
+  border-left: 4px solid transparent;
+  transition: all 0.3s;
+  border-radius: 0 6px 6px 0;
+  font-size: 0.95rem;
+}
+.tab-link:hover {
+  background: #e2e8f0;
+}
+.tab-link.active {
+  background: #f1f8f5;
+  color: #2d6a4f;
+  border-left: 4px solid #f4a261;
+}
+
+.content {
+  min-height: 100vh;
+}
+
+.year-content {
+  padding: 2rem;
+  background: #fdfdfd;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,.06);
+  margin-bottom: 1.5rem;
+  line-height: 1.8;
+  font-size: 1.05rem;
+}
+.year-content h2 {
+  font-size: 1.8rem;
+  color: #2d6a4f;
+  margin: 0 0 1.5rem;
+  font-weight: 700;
+}
+.year-content h3 {
+  font-size: 1.4rem;
+  color: #2d6a4f;
+  margin: 1.5rem 0 0.5rem;
+}
+.year-content h4 {
+  font-size: 1.2rem;
+  color: #475569;
+  margin: 1rem 0 0.5rem;
+}
+.year-content p {
+  margin-bottom: 1.2rem;
+}
+.year-content blockquote {
+  margin: 1rem 0;
+  padding-left: 1rem;
+  border-left: 4px solid #f4a261;
+  font-style: italic;
+  color: #444;
+}
+
+@media (max-width: 992px) {
+  .grades-container {
+    grid-template-columns: 1fr 2.2fr;
+    gap: 1.5rem;
+    padding: 1.5rem;
+  }
+  .newspaper-header h1 {
+    font-size: 2.6rem;
+  }
+}
+@media (max-width: 768px) {
+  .grades-container {
+    grid-template-columns: 1fr;
+    gap: 0;
+    padding: 1rem;
+  }
+  .mobile-menu-toggle {
+    display: flex;
+  }
+  .tabs {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: white;
+    z-index: 999;
+    padding: 5rem 1.5rem 1.5rem;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
+    box-shadow: 2px 0 10px rgba(0,0,0,0.2);
+    overflow-y: auto;
+  }
+  .tabs.open {
+    transform: translateX(0);
+  }
+  .tabs h2 {
+    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: 1.5rem;
+  }
+  .tab-link {
+    padding: 1rem;
+    font-size: 1rem;
+    border-radius: 8px;
+    text-align: center;
+  }
+  .content {
+    margin-top: 1rem;
+  }
+  .year-content h2 {
+    font-size: 1.6rem;
+  }
+}
+@media (max-width: 480px) {
+  .newspaper-header {
+    margin: 1rem auto;
+    padding: 1rem;
+  }
+  .newspaper-header h1 {
+    font-size: 2.2rem;
+  }
+  .newspaper-header p {
+    font-size: 1rem;
+  }
+  .grades-container {
+    margin: 1rem auto;
+    padding: 1rem;
+  }
+  .year-content {
+    padding: 1rem;
+  }
+}
+
+.level-container {
+  border-bottom: 1px dashed #ccc;
+  padding-bottom: 10px;
+}
+
+.level-container p a {
+  font-weight: bold;
+}
+
+.level-container p a:hover {
+  text-decoration: underline;
+}

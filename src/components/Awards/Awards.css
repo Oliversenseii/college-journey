@@ -1,0 +1,186 @@
+/* === HEADER === */
+.newspaper-header {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 1.5rem;
+  background: #fff;
+  box-shadow: 0 0 12px rgba(0, 0, 0, .1);
+  border-bottom: 4px double var(--green);
+  text-align: center;
+}
+
+.newspaper-header h1 {
+  font-size: 2.8rem;
+  color: var(--green);
+  margin: 0 0 0.4rem;
+  font-weight: 700;
+}
+
+.newspaper-header p {
+  font-size: 1.1rem;
+  color: var(--gray);
+  margin: 0;
+}
+
+/* === YEAR SECTION === */
+.year-section {
+  margin-bottom: 3rem;
+}
+
+.year-title {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: var(--dark);
+  margin: 0 0 1.5rem 1rem;
+  padding-bottom: 0.5rem;
+}
+
+/* === CONTAINER === */
+.awards-container {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+/* === GRID – ONE COLUMN, CENTERED === */
+.awards-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  justify-items: center;
+  width: 100%;
+}
+
+/* === CARD – NO BORDERS, CLEAN === */
+.award-card {
+  position: relative;
+  background: #fff;
+  border-radius: 16px;
+  padding: 1.8rem;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease;
+  width: 100%;
+  max-width: 560px;
+  border: none !important;
+  overflow: hidden;
+}
+
+.award-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.14);
+}
+
+/* === PHOTO === */
+.award-photo {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 12px;
+  overflow: hidden;
+  margin-bottom: 1rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  background: #f0f0f0;
+}
+
+.award-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.award-card:hover .award-photo img {
+  transform: scale(1.05);
+}
+
+/* === CONTENT === */
+.award-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.award-title {
+  font-size: 1.35rem;
+  color: var(--dark);
+  margin: 0 0 0.4rem;
+  font-weight: 700;
+}
+
+.award-subtitle {
+  font-size: 1rem;
+  color: var(--green);
+  font-weight: 600;
+  margin-bottom: 0.6rem;
+}
+
+.award-desc {
+  font-size: 0.95rem;
+  color: #444;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+  flex-grow: 1;
+}
+
+.award-date {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.88rem;
+  color: var(--gray);
+  font-weight: 500;
+}
+
+.date-icon {
+  font-size: 0.9rem;
+  color: var(--green);
+}
+
+/* === GOLD RIBBON BADGE === */
+.award-badge {
+  position: absolute;
+  top: 1rem;
+  right: -10px;
+  background: #f4c542;
+  color: #1a1a1a;
+  font-weight: bold;
+  font-size: 0.75rem;
+  padding: 0.3rem 1.2rem;
+  border-radius: 4px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  transform: rotate(12deg);
+}
+
+/* === RESPONSIVE === */
+@media (max-width: 768px) {
+  .newspaper-header h1 {
+    font-size: 2.4rem;
+  }
+
+  .award-card {
+    padding: 1.5rem;
+  }
+
+  .award-photo {
+    height: 160px;
+  }
+}
+
+@media (max-width: 480px) {
+  .newspaper-header h1 {
+    font-size: 2.1rem;
+  }
+
+  .award-photo {
+    height: 140px;
+  }
+
+  .award-badge {
+    font-size: 0.7rem;
+    padding: 0.25rem 1rem;
+    top: 0.8rem;
+    right: -8px;
+  }
+}

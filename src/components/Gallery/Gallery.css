@@ -1,0 +1,241 @@
+.gallery-section {
+  max-width: 1200px;
+  margin: 3rem auto 2rem;
+  padding: 0 1rem;
+  font-family: Georgia, serif;
+  background: #fff;
+  box-shadow: 0 0 12px rgba(0,0,0,.1);
+  padding-top: 1.5rem;
+}
+
+.gallery-header {
+  text-align: center;
+  margin-bottom: 2rem;
+  border-bottom: 4px double var(--green);
+  padding-bottom: 1rem;
+}
+
+.gallery-title {
+  font-size: 3rem;
+  font-weight: 900;
+  color: var(--green);
+  margin: 0 0 .3rem;
+  letter-spacing: -1.2px;
+}
+
+.gallery-subtitle {
+  font-size: 1.1rem;
+  color: var(--gray);
+  font-style: italic;
+  margin: 0;
+}
+
+.gallery-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.gallery-row-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.5rem;
+  padding: 1rem 0;
+  border-bottom: 1px dashed var(--border);
+}
+
+.gallery-text {
+  flex: 0 0 280px;
+  min-width: 280px;
+}
+
+.gallery-item-title {
+  font-size: 1.5rem;
+  color: var(--dark);
+  margin: 0 0 .4rem;
+  font-weight: 700;
+  border-bottom: 2px solid var(--green);
+  padding-bottom: .2rem;
+  line-height: 1.3;
+}
+
+.gallery-item-desc {
+  font-size: 1rem;
+  color: var(--gray);
+  margin: 0;
+  line-height: 1.6;
+  font-style: italic;
+}
+
+/* GALLERY IMAGES: 4 PER ROW, 5TH GOES TO NEXT ROW */
+.gallery-thumbs-row {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);   /* 4 columns */
+  gap: 1rem;
+  padding: 0.5rem 0;
+  overflow: visible;                       /* No scroll, let it wrap */
+}
+
+/* Each image thumbnail */
+.thumb-wrapper {
+  position: relative;
+  cursor: pointer;
+  width: 100%;
+  height: 140px;
+  overflow: hidden;
+  border: 1.5px solid var(--border);
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+  transition: all 0.3s ease;
+  border-radius: 6px;
+}
+
+.thumb {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: opacity 0.3s ease;
+}
+
+.thumb-wrapper:hover .thumb {
+  opacity: 0.85;
+}
+
+.thumb-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(45, 106, 79, 0.75);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.thumb-wrapper:hover .thumb-overlay {
+  opacity: 1;
+}
+
+.thumb-overlay svg {
+  stroke: white;
+}
+
+/* MODAL */
+.gallery-modal {
+  position: fixed;
+  inset: 0;
+  background: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  padding: 2rem;
+}
+
+.modal-content {
+  position: relative;
+  max-width: 95vw;
+  max-height: 95vh;
+  text-align: center;
+}
+
+.modal-image {
+  max-width: 100%;
+  max-height: 85vh;
+  object-fit: contain;
+  border: 5px solid white;
+  box-shadow: 0 0 40px rgba(0,0,0,0.7);
+}
+
+.modal-close {
+  position: absolute;
+  top: -12px;
+  right: -12px;
+  background: white;
+  border: 3px solid var(--green);
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.modal-close:hover {
+  background: var(--yellow);
+  transform: rotate(90deg);
+}
+
+.modal-close svg {
+  stroke: var(--green);
+}
+
+.modal-nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(255,255,255,0.95);
+  border: 2px solid var(--green);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.modal-prev { left: 1.5rem; }
+.modal-next { right: 1.5rem; }
+
+.modal-nav:hover {
+  background: var(--green);
+}
+
+.modal-nav:hover svg {
+  stroke: white;
+}
+
+.modal-nav svg {
+  stroke: var(--green);
+}
+
+.modal-caption {
+  margin-top: 1rem;
+  color: #ccc;
+  font-size: 1.1rem;
+  font-style: italic;
+  padding: 0.5rem 0;
+  border-top: 1px solid #444;
+  border-bottom: 1px solid #444;
+}
+
+/* RESPONSIVE: 2 per row on tablets, 1 per row on mobile */
+@media (max-width: 840px) {
+  .gallery-thumbs-row {
+    grid-template-columns: repeat(2, 1fr);   /* 2 images per row */
+  }
+  .gallery-row-item {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .gallery-text {
+    flex: none;
+    min-width: auto;
+  }
+  .thumb-wrapper {
+    height: 120px;
+  }
+}
+
+@media (max-width: 480px) {
+  .gallery-title { 
+    font-size: 2.4rem; 
+  }
+  .gallery-thumbs-row {
+    grid-template-columns: 1fr;              /* 1 image per row */
+  }
+  .thumb-wrapper {
+    height: 100px;
+  }
+}
