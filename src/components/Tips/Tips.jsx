@@ -17,12 +17,6 @@ export default function Tips() {
     }
   }, [activeYear]);
 
-  const handleTabClick = (e, yearId) => {
-    e.preventDefault();
-    setActiveYear(yearId);
-    setMobileMenuOpen(false);
-  };
-
   return (
     <>
       <header className="newspaper-header">
@@ -45,13 +39,15 @@ export default function Tips() {
           <ul className="tab-list">
             {tipYears.map((year) => (
               <li key={year.id} className="tab-item">
-                <a
-                  href="#"
+                <button
                   className={`tab-link ${activeYear === year.id ? "active" : ""}`}
-                  onClick={(e) => handleTabClick(e, year.id)}
+                  onClick={() => {
+                    setActiveYear(year.id);
+                    setMobileMenuOpen(false);
+                  }}
                 >
                   {year.name}
-                </a>
+                </button>
               </li>
             ))}
           </ul>

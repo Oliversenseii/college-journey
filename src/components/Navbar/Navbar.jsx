@@ -23,7 +23,7 @@ export default function Navbar() {
       <nav>
         <div className="container">
           <h1 onClick={handleLogoClick} style={{ cursor: "pointer" }}>
-            My College Life
+            College Chronicles
           </h1>
 
           <ul>
