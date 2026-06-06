@@ -24,7 +24,7 @@ const articles = [
   },
   {
     title: "Before the Battle of the Bands: IS Week Highlights",
-    byline: "By You • Apr 26, 2025",
+    byline: "Date • Apr 26, 2025",
     img: "./Home2.jpg",
     content: "This photo captures the moments before the Battle of the Bands event during IS Week. They are also holding medals and awards for the champions of other events. Taken at Kolehiyo ng Lungsod ng Dasmariñas.",
     quote: "“A moment of pride before the music begins.”",
@@ -32,7 +32,7 @@ const articles = [
   },
   {
     title: "After Our E-Commerce Presentation",
-    byline: "By You • Oct 10, 2024",
+    byline: "Date • Oct 10, 2024",
     img: "./Home3.jpg",
     content: (
       <>
@@ -53,7 +53,7 @@ const articles = [
   },
   {
     title: "MassKara Festival Performance at KLD",
-    byline: "By You • Jun 27, 2023",
+    byline: "Date • Jun 27, 2023",
     content: (
       <>
         This photo was taken during our dance performance for the <strong>MasKara Festival</strong> presentation.
@@ -72,7 +72,7 @@ const articles = [
   },
   {
     title: "Why Did We Perform the MassKara Festival?",
-    byline: "By You • Jun 27, 2023",
+    byline: "Date • Jun 27, 2023",
     content: (
       <>
         The <strong>MassKara Festival</strong> is an annual festival in Bacolod City, held every fourth Sunday of October.
@@ -87,7 +87,7 @@ const articles = [
   },
   {
     title: "Late Night Swim at Coco Valley",
-    byline: "By You • Jun 15, 2023",
+    byline: "Date • Jun 15, 2023",
     images: [
       { src: "./Home8.jpg", alt: "Group in pool at night" },
       { src: "./Home8.1.jpg", alt: "Section laughing by water" }
@@ -109,21 +109,21 @@ const articles = [
   },
   {
     title: "Foundation Week at KLD",
-    byline: "By You • Sep 16, 2024",
+    byline: "Date • Sep 16, 2024",
     img: "./Home7.jpg",
     content: "Foundation Week at KLD. Captured by the photographer. Me on the left, Aquino in the center, Salasbar on the right.",
     quote: "“Foundation Week moments.”",
   },
   {
     title: "Late Nights After Night Class, 2nd Year",
-    byline: "By You • Oct 28, 2024",
+    byline: "Date • Oct 28, 2024",
     img: "./Home9.jpg",
     content: "Back in 2nd year — night class every week. Class ends, campus is dark, and we're still walking home. Full of stories and laughter. I miss those nights.",
     quote: "“Late nights, best memories.”"
   },
   {
     title: "College Days: Chaos, Breaks & Survival",
-    byline: "By You • Oct 31, 2025",
+    byline: "Date • Oct 31, 2025",
     content: (
       <>
         In college, sometimes you come in <strong>early</strong> — 7 AM sharp — just to beat the crowd, and leave at <strong>night</strong>, eyes heavy, stomach growling.
@@ -144,7 +144,7 @@ const articles = [
   },
   {
     title: "My Birthday Surprise",
-    byline: "By You • Dec 12, 2024",
+    byline: "Date • Dec 12, 2024",
     img: "./Home11.jpg",
     content: "It was my birthday, and we had a regular class that day. After class, my classmates surprised me with a little celebration. I felt so thankful for the way they treated me—it really made my day special.",
     quote: "“The best gifts come from the heart.”",
@@ -153,14 +153,14 @@ const articles = [
   },
   {
     title: "Post-P.E Basketball Moments",
-    byline: "By You • Nov 12, 2023",
+    byline: "Date • Nov 12, 2023",
     img: "./Home12.jpg",
     content: "After P.E. class, where we played basketball, we gathered for a group photo. This was taken at the KLD Gymnasium, Building 1—sweaty, tired, but full of smiles and good vibes.",
     quote: "“Teamwork makes the dream work.”",
   },
   {
     title: "Encantadia Teasing Session",
-    byline: "By You • Mar 12, 2024",
+    byline: "Date • Mar 12, 2024",
     img: "./Home15.jpg",
     content: (
       <>
@@ -176,7 +176,7 @@ const articles = [
   },
   {
     title: "Long Vacant Vibes at Encantadia",
-    byline: "By You • Feb 26, 2024",
+    byline: "Date • Feb 26, 2024",
     images: [
       { src: "./Home14.2.jpg", alt: "Group chilling at Encantadia" },
       { src: "./Home14.3.jpg", alt: "Memories from our favorite spot" }
@@ -201,7 +201,7 @@ const articles = [
   },
   {
     title: "First P.E. Day Together",
-    byline: "By You • Sep 12, 2022",
+    byline: "Date • Sep 12, 2022",
     img: "./Home17.jpg",
     content: (
       <>
@@ -217,7 +217,7 @@ const articles = [
   },
   {
     title: "House Hopping and Full Bellies",
-    byline: "By You • Oct 12, 2022",
+    byline: "Date • Oct 12, 2022",
     img: "./Home16.jpg",
     content: (
       <>
