@@ -1,5 +1,21 @@
 const galleryData = [
   {
+    title: "Creative Shots",
+    description: "Fun, artistic, and candid clicks - a collection of creative shots that capture personality beyond the usual poses.",
+    images: [
+      { src: "./creative_shots/cs-10.jpg", alt: "Creative Shots" },
+      { src: "./creative_shots/cs-9.jpg", alt: "Creative Shots" },
+      { src: "./creative_shots/cs-8.jpg", alt: "Creative Shots" },
+      { src: "./creative_shots/cs-7.jpg", alt: "Creative Shots" },
+      { src: "./creative_shots/cs-6.jpg", alt: "Creative Shots" },
+      { src: "./creative_shots/cs-5.jpg", alt: "Creative Shots" },
+      { src: "./creative_shots/cs-4.jpg", alt: "Creative Shots" },
+      { src: "./creative_shots/cs-3.jpg", alt: "Creative Shots" },
+      { src: "./creative_shots/cs-2.jpg", alt: "Creative Shots" },
+      { src: "./creative_shots/cs-1.jpg", alt: "Creative Shots" },
+    ]
+  },
+  {
     title: "Capstone Journey",
     description: "The real Capstone 2 grind – sleepless coding sessions, team coordination, final defense nerves, and the huge relief when we finally passed.",
     images: [

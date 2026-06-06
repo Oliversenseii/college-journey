@@ -1,5 +1,28 @@
 const articles = [
   {
+    title: "Dean;s Lister A.Y 2025 - 2026",
+    byline: "Date • May 31, 2026",
+    img: "./home/h-3.jpg",
+    quote: "“I didn't come this far to only come this far.”",
+    span: 1,
+  },
+  {
+    title: "Behind the Scenes: Creative Shots",
+    byline: "Date • Apr 27, 2026",
+    images: [
+      { src: "./home/h-1.jpg", alt: "Creative Shots" },
+      { src: "./home/h-2.jpg", alt: "Creative Shots" },
+    ],
+    content: "3 out of 4 barkada members captured inside the production studio, striking confident poses before the shoot begins. Taken at Kolehiyo ng Lungsod ng Dasmariñas.",
+    quote: "“Great content starts with a great team.”",
+    span: 2,
+    collage: true,
+    extra: { 
+      tags: ["Creative", "3 out of 4", "4th Year"], 
+      readTime: "1 min" 
+    }
+  },
+  {
     title: "Before the Battle of the Bands: IS Week Highlights",
     byline: "By You • Apr 26, 2025",
     img: "./Home2.jpg",
